@@ -1,10 +1,10 @@
 .term {
     border-style: solid;
-    border-width: 45px 15px 0px 140px;
-    -moz-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
-    -webkit-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
-    -o-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
-    border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
+    border-width: 28px 15px 0px 100px;
+    -moz-border-image: url(../../assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
+    -webkit-border-image: url(../../assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
+    -o-border-image: url(../../assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
+    border-image: url(../../assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
     border-radius: 1%;
 
     height: 80vh;
@@ -21,5 +21,5 @@
 
 .content{
     /* Neutralize the left border width */
-    margin-left: -140px;
+    margin-left: -100px;
 }
