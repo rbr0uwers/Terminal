@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
-    background-color: #008081; 
+    /* background-color: #008081;  */
+    /* background-image: url("https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+    background: rgb(255,205,178);
+    background: -moz-linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
+    background: -webkit-linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
+    background: linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
     font-family: 'Inconsolata', monospace;
     color: #eee;
 }
