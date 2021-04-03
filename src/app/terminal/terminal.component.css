@@ -23,3 +23,10 @@
     /* Neutralize the left border width */
     margin-left: -100px;
 }
+
+@media (max-width: 576px) { 
+    .term {
+        height: 100vh;
+        margin-top: 0;
+    }
+ }
