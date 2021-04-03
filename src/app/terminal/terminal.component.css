@@ -1,9 +1,20 @@
 .term {
-    border: 20px solid black;
+    border-style: solid;
+    border-width: 45px 15px 0px 140px;
+    -moz-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
+    -webkit-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
+    -o-border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
+    border-image: url(../../assets/img/TerminalBorder.png) 45 15 0 140 repeat repeat;
+    border-radius: 1%;
     height: 80vh;
     margin-top: 10vh;
-    background-color: #111;
+    background-color: #222;
     box-shadow: 0 1rem 4rem 0.5rem rgba(0,0,0,0.75);
     -webkit-box-shadow: 0 1rem 4rem 0.5rem rgba(0,0,0,0.75);
     -moz-box-shadow: 0 1rem 4rem 0.5rem rgba(0,0,0,0.75);
+}
+
+.content{
+    /* Neutralize the left border width */
+    margin-left: -140px;
 }
