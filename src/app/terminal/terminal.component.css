@@ -7,8 +7,9 @@
     border-image: url(../../assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
     border-radius: 1%;
 
-    height: 80vh;
+    min-height: 80vh;
     margin-top: 10vh;
+    padding-bottom: 1rem;
 
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
@@ -26,7 +27,7 @@
 
 @media (max-width: 576px) { 
     .term {
-        height: 100vh;
+        min-height: 100vh;
         margin-top: 0;
     }
  }

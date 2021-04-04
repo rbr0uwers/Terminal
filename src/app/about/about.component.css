@@ -1,0 +1,15 @@
+.text-justify{
+    text-align: justify;
+}
+
+.list-dashed {
+    list-style: none;
+}
+
+.list-dashed > li {
+    text-indent: -1rem;
+  }
+
+.list-dashed > li:before {
+    content: "- ";
+  }
