@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import { slideInAnimation } from "../animations";
 
 @Component({
   selector: 'terminal',
   templateUrl: './terminal.component.html',
-  styleUrls: ['./terminal.component.css']
+  styleUrls: ['./terminal.component.css'],
+  animations: [slideInAnimation]
 })
 export class TerminalComponent implements OnInit {
   date : Date;
@@ -14,6 +17,10 @@ export class TerminalComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 
 }

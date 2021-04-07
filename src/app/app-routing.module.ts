@@ -5,8 +5,9 @@ import { BioComponent } from './bio/bio.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  {path: "", component: AboutComponent},
-  {path: "bio", component: BioComponent},
+  {path: "", pathMatch: 'full', redirectTo: '/about'},
+  {path: "about", component: AboutComponent, data: {animation: "aboutPage"}},
+  {path: "bio", component: BioComponent, data: {animation: "bioPage"}},
   {path: "portfolio", component: PortfolioComponent}
 ];
 
