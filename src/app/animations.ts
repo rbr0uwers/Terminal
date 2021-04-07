@@ -1,4 +1,4 @@
-import { animate, animateChild, group, query, stagger, style, transition, trigger } from "@angular/animations";
+import { animate, query, stagger, state, style, transition, trigger } from "@angular/animations";
 
 export const topBottomAnimation =
     trigger('routeAnimations', [
@@ -20,3 +20,13 @@ export const topBottomAnimation =
             ])      
         ])
     ])
+
+export const blink = 
+    trigger('blink', [
+        state('inactive', style({ opacity: 0 })),
+        state('active', style({ opacity: 1 })),
+        transition('* <=> *', [
+            animate("0.2s 0.5s")
+        ])
+    ]);
+

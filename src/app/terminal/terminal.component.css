@@ -25,6 +25,11 @@
     margin-left: -100px;
 }
 
+#cursor{
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
 @media (max-width: 576px) { 
     .term {
         min-height: 100vh;
