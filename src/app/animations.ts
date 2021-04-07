@@ -1,6 +1,6 @@
 import { animate, animateChild, group, query, stagger, style, transition, trigger } from "@angular/animations";
 
-export const slideInAnimation =
+export const topBottomAnimation =
     trigger('routeAnimations', [
         transition("* <=> bioPage", [     
             query(':leave', style({ display:  "none"}), {optional: true}), 
