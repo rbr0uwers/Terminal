@@ -7,9 +7,6 @@
     border-image: url(/assets/img/terminal_border.png) 28 15 0 100 repeat repeat;
     
     border-radius: 1%;
-    /* Switched off for Webkit Browser as there is a bug with backdrop-filter */
-    -webkit-border-radius: 0;
-    -moz-border-radius: 1%;
 
     min-height: 80vh;
     margin-top: 10vh;
@@ -22,6 +19,14 @@
     box-shadow: 0 1rem 4rem 0.5rem rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0 1rem 4rem 0.5rem rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0 1rem 4rem 0.5rem rgba(0, 0, 0, 0.75);
+}
+
+/* Switched off for Webkit Browser as there is a bug with backdrop-filter */
+/* Check https://browserstrangeness.bitbucket.io/css_hacks.html#safari regularly */
+@supports (-webkit-hyphens:none) { 
+    .term { 
+        border-radius:0; 
+    } 
 }
 
 .content{
