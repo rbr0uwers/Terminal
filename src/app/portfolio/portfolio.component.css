@@ -6,3 +6,45 @@ th {
     font-weight: 400;
     text-transform: uppercase;
 }
+
+@media only screen and (max-width: 760px){
+	.table-mobile, .table-mobile thead, .table-mobile tbody, .table-mobile th, .table-mobile td, .table-mobile tr { 
+		display: block; 
+	}
+	
+	.table-mobile thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.table-mobile tr { 
+        margin-top: 1rem;
+        border: 1px dashed #ccc; 
+    }
+	
+	.table-mobile td { 
+		border: none;
+		border-bottom: 1px dashed #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+    .table-mobile td:last-child { 
+		border: none; 
+	}
+	
+	.table-mobile td:before { 
+		position: absolute;
+		top: 0.5rem;
+		left: 0.5rem;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	.table-mobile td:nth-of-type(1):before { content: "NAME"; }
+	.table-mobile td:nth-of-type(2):before { content: "DESCRIPTION"; }
+	.table-mobile td:nth-of-type(3):before { content: "TECHNOLOGIES"; }
+	.table-mobile td:nth-of-type(4):before { content: "SRC"; }
+}
