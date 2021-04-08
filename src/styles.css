@@ -7,6 +7,12 @@ body {
     background: -moz-linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
     background: -webkit-linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
     background: linear-gradient(90deg, rgba(255,205,178,1) 0%, rgba(255,180,162,1) 25%, rgba(229,152,155,1) 50%, rgba(181,131,141,1) 67%, rgba(109,104,117,1) 90%);
+
+    background: url(/assets/img/pexels-johannes-plenio-1423600.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
     font-family: 'Inconsolata', monospace;
     color: #f8f9fa;
@@ -15,3 +21,28 @@ body {
 a, a:hover {
     color: #fff;
 }
+
+@media screen and (max-width: 1399.98px) { 
+    body {
+        background: url(/assets/img/pexels-johannes-plenio-1423600_lg.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width: 767.98px) { 
+    body {
+        background: url(/assets/img/pexels-johannes-plenio-1423600_sm.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+    }
+}
+
+
+
+
