@@ -9,15 +9,23 @@ import { topBottomAnimation, blink } from "../animations";
   animations: [topBottomAnimation, blink]
 })
 export class TerminalComponent implements OnInit {
-  date : Date;
+  date!: Date;
   place: Location = location;
   blinkState: string = "active";
 
   constructor() { 
-    this.date = new Date();
+    
   }
 
   ngOnInit(): void {
+    fetch('https://api.github.com/repos/rbr0uwers/Terminal', {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json'
+      }})
+      .then(response => response.json())
+      .then(data => {
+        this.date = new Date(Date.parse(data.updated_at))
+      })
   }
 
   prepareRoute(outlet: RouterOutlet) {
